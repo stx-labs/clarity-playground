@@ -18,7 +18,6 @@ export async function initMonacoEditor(initialContract) {
     folding: true,
   });
 
-  // init monaco editor
   const editor = monaco.editor.create(window.editor, {
     value: initialContract,
     language: "clarity",
