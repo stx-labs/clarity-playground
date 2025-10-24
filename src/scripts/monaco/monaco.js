@@ -1,7 +1,7 @@
 self.MonacoEnvironment = {
   getWorkerUrl: function (_moduleId, _label) {
     const workerUrl =
-      "https://cdn.jsdelivr.net/npm/monaco-editor@0.54.0/esm/vs/editor/editor.worker.js";
+      "https://cdn.jsdelivr.net/npm/monaco-editor@0.52.0/esm/vs/editor/editor.worker.js";
 
     const blob = new Blob([`import '${workerUrl}';`], {
       type: "application/javascript",
