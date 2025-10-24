@@ -1,11 +1,6 @@
-self.MonacoEnvironment = {
-  getWorkerUrl: function (_moduleId, _label) {
-    return "https://esm.sh/monaco-editor@0.52.0/esm/vs/editor/editor.worker?worker";
-  },
-};
-
 import { decodeAndDecompress } from "./base64.js";
 import { initClarinetSDK } from "./simnet.js";
+import { initMonacoEditor } from "./editor.js";
 
 let initialSearchString = window.location.search;
 
@@ -18,7 +13,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   window.history.replaceState(null, "", url.toString());
 
   initClarinetSDK(initialContract, params);
-  const { initMonacoEditor } = await import("./editor.js");
   initMonacoEditor(initialContract);
 });
 

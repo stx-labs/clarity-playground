@@ -1,12 +1,11 @@
 import { compressAndEncode } from "./base64.js";
 import { deployContract, setDeployedStatus } from "./simnet.js";
+import { monaco } from "./monaco/monaco.js";
 
 /**
  * @param {string} initialContract
  */
-export async function initMonacoEditor(initialContract) {
-  const { monaco } = await import("./monaco/monaco.js");
-
+export function initMonacoEditor(initialContract) {
   const smallScreenOptions = Object.freeze({
     lineNumbers: "off",
     glyphMargin: false,

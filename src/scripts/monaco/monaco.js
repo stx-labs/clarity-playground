@@ -1,3 +1,16 @@
+self.MonacoEnvironment = {
+  getWorkerUrl: function (_moduleId, _label) {
+    const workerUrl =
+      "https://cdn.jsdelivr.net/npm/monaco-editor@0.54.0/esm/vs/editor/editor.worker.js";
+
+    const blob = new Blob([`import '${workerUrl}';`], {
+      type: "application/javascript",
+    });
+
+    return URL.createObjectURL(blob);
+  },
+};
+
 import * as monaco from "monaco-editor";
 import { Registry } from "monaco-textmate";
 import { wireTmGrammars } from "monaco-editor-textmate";
