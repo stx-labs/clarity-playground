@@ -1,6 +1,4 @@
 import { decodeAndDecompress } from "./base64.js";
-import { initMonacoEditor } from "./editor.js";
-import { initClarinetSDK } from "./simnet.js";
 
 let initialSearchString = window.location.search;
 
@@ -12,8 +10,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   url.searchParams.delete("snippet");
   window.history.replaceState(null, "", url.toString());
 
-  initClarinetSDK(initialContract, params);
-  initMonacoEditor(initialContract);
+  import("./simnet.js").then(({ initClarinetSDK }) => {
+    initClarinetSDK(initialContract, params);
+  });
+  import("./editor.js").then(({ initMonacoEditor }) => {
+    initMonacoEditor(initialContract);
+  });
 });
 
 // get initial contract from URL or local storage
