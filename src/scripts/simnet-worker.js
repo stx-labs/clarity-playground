@@ -14,7 +14,7 @@ let deployed = false;
 // @ts-ignore
 globalThis.window = globalThis;
 
-/** @import { Simnet } from "@hirosystems/clarinet-sdk-browser" */
+/** @import { Simnet } from "@stacks/clarinet-sdk-browser" */
 /** @import { InitOptions } from "./simnet" */
 
 /** @type {Simnet | null} */
@@ -76,7 +76,7 @@ function postClarityResult(value, classes) {
 export async function initClarinetSDK(options) {
   const { initSimnet, SDK } = await import(
     // @ts-ignore
-    "https://esm.sh/@hirosystems/clarinet-sdk-browser@latest"
+    "https://esm.sh/@stacks/clarinet-sdk-browser@latest"
   );
 
   // init simnet

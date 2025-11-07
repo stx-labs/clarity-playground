@@ -1,7 +1,7 @@
 # Clarity Playground
 
 Run Clarity code in the browser with the
-[Clarinet SDK](https://www.npmjs.com/package/@hirosystems/clarinet-sdk-browser).
+[Clarinet SDK](https://www.npmjs.com/package/@stacks/clarinet-sdk-browser).
 
 The playground gives access to the [Simnet](https://docs.hiro.so/clarinet/networks) in the browser.
 It's possible to:
