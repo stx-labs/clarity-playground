@@ -334,7 +334,7 @@ pre {
   .icon {
     width: 16px;
     height: 16px;
-    background-image: url("/images/svgs/copy-link.svg");
+    background-image: url("../../images/svgs/copy-link.svg");
   }
 
   @media screen and (min-width: 600px) {
@@ -482,7 +482,7 @@ pre {
   display: none;
   width: 1rem;
   height: 1rem;
-  background-image: url("/images/svgs/checked.svg");
+  background-image: url("../../images/svgs/checked.svg");
 }
 
 button.clicked {
@@ -499,7 +499,7 @@ button.clicked {
   top: var(--padding);
 
   .icon {
-    background-image: url("/images/svgs/copy-code.svg");
+    background-image: url("../../images/svgs/copy-code.svg");
   }
 
   &:before {
