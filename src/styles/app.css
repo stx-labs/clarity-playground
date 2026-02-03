@@ -1,11 +1,12 @@
 @font-face {
   font-family: "NectoMono Regular";
-  src: url("/fonts/NectoMono-Regular.woff2") format("woff2");
+  src: url("../../fonts/NectoMono-Regular.woff2") format("woff2");
 }
 
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -86,7 +87,8 @@ body {
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.25rem; /* 142.857% */
+  line-height: 1.25rem;
+  /* 142.857% */
 }
 
 /*  layout */
@@ -206,6 +208,7 @@ footer {
     left: 0;
     right: 0;
   }
+
   #console {
     position: absolute;
     top: calc(50% + 4px);
@@ -245,15 +248,15 @@ footer {
 }
 
 #output {
-  & > .success {
+  &>.success {
     color: var(--ansi-green);
   }
 
-  & > .error {
+  &>.error {
     color: var(--ansi-red);
   }
 
-  & > .log {
+  &>.log {
     color: var(--gray-300);
   }
 }
@@ -434,6 +437,7 @@ pre {
     position: absolute;
     background-color: var(--gray-200);
   }
+
   &::before {
     right: 40px;
     align-items: flex-end;
@@ -445,6 +449,7 @@ pre {
     white-space: nowrap;
     z-index: 6;
   }
+
   &:after {
     width: 1rem;
     height: 1rem;
