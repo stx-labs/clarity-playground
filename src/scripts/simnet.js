@@ -33,7 +33,7 @@ let simnetWorker = null;
  * @param {InitOptions} params
  */
 export async function initClarinetSDK(initialContract, params) {
-  simnetWorker = new Worker("./simnet-worker.js", {
+  simnetWorker = new Worker("/src/scripts/simnet-worker.js", {
     type: "module",
   });
 
