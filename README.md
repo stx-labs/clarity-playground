@@ -3,7 +3,7 @@
 Run Clarity code in the browser with the
 [Clarinet SDK](https://www.npmjs.com/package/@stacks/clarinet-sdk-browser).
 
-The playground gives access to the [Simnet](https://docs.hiro.so/clarinet/networks) in the browser.
+The playground gives access to the [Simnet](https://docs.stacks.co/get-started/clarity-crash-course#what-is-simnet) in the browser.
 It's possible to:
 
 - deploy contracts,
@@ -16,7 +16,7 @@ The playground can be used with Mainnet Execution Simulation (MXS). Meaning, tha
 mainnet data, and simulate transactions as if they were executed on mainnet.
 
 To do so, pass the `remote_data` query parameter in the URL, with an optional `initial_height`
-value: https://play.hiro.so/?remote_data=true&initial_height=3583219
+value: https://play.stackslabs.com/?remote_data=true&initial_height=3583219
 
 ## Contributing
 

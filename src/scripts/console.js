@@ -1,5 +1,3 @@
-import { Cl } from "@stacks/transactions";
-
 let storedHistory = localStorage.getItem("console-history");
 let parsdedHistory = storedHistory ? JSON.parse(storedHistory) : null;
 /** @type string[] */

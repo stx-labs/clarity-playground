@@ -45,7 +45,10 @@ export async function initClarinetSDK(initialContract, params) {
     if (action === "initialized") {
       showStartMessage(data.currentEpoch);
       setEpochInSearchParams(data.currentEpoch);
-      if (!simnetWorker) return;
+      if (!simnetWorker) {
+        console.log("Failed to load simnet work");
+        return
+      };
       simnetWorker.postMessage({
         action: "deployContract",
         data: {
